@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "target": "ES2015", // 타입스크립트를 ES2015로 변환하겠다.
+    "module": "ESNext", // 자바스크립트의 표준, 최신 버전으로 사용하겠다.
+    "moduleResolution": "Node", // 모듈의 해석 방식, js파일이 생략가능해진다.
+    "esModuleInterop": true, // ESM과 CommonJs 방식을 호환하겠다.
+    "lib": ["ESNext", "DOM"], //라이브러리 줄임, 컴파일할 떄 라이브러리 목록
+    "strict": true // 타입스크립트 엄격한 문법
+  },
+  "include": [
+    "src/**/*.ts" // src폴더의 모든 파일의 ts파일을 포함하겠다 지정
+  ], //프로젝트의 어느 부분에서 타입스크립트를 찾을 수 있는지
+  "exclude": [
+    "node_modules" // 컴파일 과정에서 제외하겠다.
+  ] // 컴파일할 때 제외할 목록을 명시
+}
